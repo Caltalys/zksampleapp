@@ -46,20 +46,6 @@ public class Entry extends BaseObject<Object> {
 	public String URL_M_NOIMAGE = "/assetsfe/images/lg_noimage.png";
 	public String URL_S_NOIMAGE = "/assetsfe/images/sm_noimage.png";
 
-	// trang thai bai viet
-	@Value("${trangthaisoan.daduyet}")
-	public String TTS_DA_DUYET = "";
-	@Value("${trangthaisoan.dangsoan}")
-	public String TTS_DANG_SOAN = "";
-	@Value("${trangthaisoan.choduyet}")
-	public String TTS_CHO_DUYET = "";
-	@Value("${trangthaisoan.tuchoi}")
-	public String TTS_TU_CHOI = "";
-	@Value("${trangthaihienthi.tieudiemchinh}")
-	public String TT_TIEU_DIEM_CHINH = "";
-	@Value("${trangthaihienthi.noibat}")
-	public boolean TT_NOI_BAT = true;
-
 	@Value("${action.xem}")
 	public String XEM = ""; // duoc xem bat ky
 	@Value("${action.list}")
@@ -70,12 +56,6 @@ public class Entry extends BaseObject<Object> {
 	public String XOA = ""; // duoc xoa bat ky
 	@Value("${action.them}")
 	public String THEM = ""; // duoc them
-	@Value("${action.xuatban}")
-	public String XUATBAN = ""; // duoc duyet va xuat ban
-	@Value("${action.lichsucapnhat}")
-	public String LICHSUCAPNHAT = ""; // duoc them
-	@Value("${action.lichsu}")
-	public String LICHSU = "";
 
 	@Value("${url.nguoidung}")
 	public String NGUOIDUNG = "";
@@ -83,14 +63,6 @@ public class Entry extends BaseObject<Object> {
 	public String VAITRO = "";
 	@Value("${url.donvi}")
 	public String DONVI = "";
-	@Value("${url.donvihanhchinh}")
-	public String DONVIHANHCHINH = "";
-	@Value("${url.banner}")
-	public String BANNER = "";
-	@Value("${url.chude}")
-	public String CATEGORY = "";
-	@Value("${url.baiviet}")
-	public String BAIVIET = "";
 	// uend
 	public char CHAR_CACH = ':';
 	public String CACH = CHAR_CACH + "";
@@ -128,71 +100,16 @@ public class Entry extends BaseObject<Object> {
 	@Value("${url.donvi}" + ":" + "${action.sua}")
 	public String DONVISUA = "";
 
-	@Value("${url.donvihanhchinh}" + ":" + "${action.xem}")
-	public String DONVIHANHCHINHXEM = "";
-	@Value("${url.donvihanhchinh}" + ":" + "${action.them}")
-	public String DONVIHANHCHINHTHEM = "";
-	@Value("${url.donvihanhchinh}" + ":" + "${action.list}")
-	public String DONVIHANHCHINHLIST = "";
-	@Value("${url.donvihanhchinh}" + ":" + "${action.xoa}")
-	public String DONVIHANHCHINHXOA = "";
-	@Value("${url.donvihanhchinh}" + ":" + "${action.sua}")
-	public String DONVIHANHCHINHSUA = "";
-
 	@Value("${url.quantrihethong}" + ":" + "${action.list}")
 	public String QUANTRIHETHONGLIST = "";
 
-	// Hệ thống active
-	@Value("${url.hethong}" + ":" + "${action.xem}")
-	public String HETHONGXEM = "";
-	@Value("${url.hethong}" + ":" + "${action.sua}")
-	public String HETHONGSUA = "";
-
-	@Value("${url.banner}" + ":" + "${action.xem}")
-	public String BANNERXEM = "";
-	@Value("${url.banner}" + ":" + "${action.them}")
-	public String BANNERTHEM = "";
-	@Value("${url.banner}" + ":" + "${action.list}")
-	public String BANNERLIST = "";
-	@Value("${url.banner}" + ":" + "${action.xoa}")
-	public String BANNERXOA = "";
-	@Value("${url.banner}" + ":" + "${action.sua}")
-	public String BANNERSUA = "";
-
-	@Value("${url.chude}" + ":" + "${action.xem}")
-	public String CATEGORYXEM = "";
-	@Value("${url.chude}" + ":" + "${action.them}")
-	public String CATEGORYTHEM = "";
-	@Value("${url.chude}" + ":" + "${action.list}")
-	public String CATEGORYLIST = "";
-	@Value("${url.chude}" + ":" + "${action.xoa}")
-	public String CATEGORYXOA = "";
-	@Value("${url.chude}" + ":" + "${action.sua}")
-	public String CATEGORYSUA = "";
-
-	@Value("${url.baiviet}" + ":" + "${action.xem}")
-	public String BAIVIETXEM = "";
-	@Value("${url.baiviet}" + ":" + "${action.them}")
-	public String BAIVIETTHEM = "";
-	@Value("${url.baiviet}" + ":" + "${action.list}")
-	public String BAIVIETLIST = "";
-	@Value("${url.baiviet}" + ":" + "${action.xoa}")
-	public String BAIVIETXOA = "";
-	@Value("${url.baiviet}" + ":" + "${action.sua}")
-	public String BAIVIETSUA = "";
-	@Value("${url.baiviet}" + ":" + "${action.xuatban}")
-	public String BAIVIETXUATBAN = "";
-
-	@Value("${url.thongke}" + ":" + "${action.list}")
-	public String THONGKELIST = "";
-
 	// aend
 	public String[] getRESOURCES() {
-		return new String[] { NGUOIDUNG, VAITRO, DONVI, BANNER, CATEGORY };
+		return new String[] { NGUOIDUNG, VAITRO, DONVI};
 	}
 
 	public String[] getACTIONS() {
-		return new String[] { LIST, XEM, THEM, SUA, XOA, XUATBAN, LICHSUCAPNHAT, LICHSU };
+		return new String[] { LIST, XEM, THEM, SUA, XOA};
 	}
 
 	static {

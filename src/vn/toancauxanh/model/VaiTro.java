@@ -188,34 +188,7 @@ public class VaiTro extends Model<VaiTro> {
 		quyens1.add(core().DONVILIST);
 		quyens1.add(core().DONVIXOA);		
 		
-		quyens1.add(core().DONVIHANHCHINHTHEM);
-		quyens1.add(core().DONVIHANHCHINHSUA);
-		quyens1.add(core().DONVIHANHCHINHXEM);
-		quyens1.add(core().DONVIHANHCHINHLIST);
-		quyens1.add(core().DONVIHANHCHINHXOA);
-		
 		quyens1.add(core().QUANTRIHETHONGLIST);
-		
-		quyens1.add(core().CATEGORYTHEM);
-		quyens1.add(core().CATEGORYSUA);
-		quyens1.add(core().CATEGORYXEM);
-		quyens1.add(core().CATEGORYLIST);
-		quyens1.add(core().CATEGORYXOA);
-		
-		quyens1.add(core().BANNERTHEM);
-		quyens1.add(core().BANNERSUA);
-		quyens1.add(core().BANNERXEM);
-		quyens1.add(core().BANNERLIST);
-		quyens1.add(core().BANNERXOA);
-		
-		quyens1.add(core().BAIVIETTHEM);
-		quyens1.add(core().BAIVIETSUA);
-		quyens1.add(core().BAIVIETXEM);
-		quyens1.add(core().BAIVIETLIST);
-		quyens1.add(core().BAIVIETXOA);
-		quyens1.add(core().BAIVIETXUATBAN);
-		
-		quyens1.add(core().THONGKELIST);
 		
 		return quyens1;
 	}
@@ -242,28 +215,9 @@ public class VaiTro extends Model<VaiTro> {
 				quyens1.add(core().DONVISUA);
 				quyens1.add(core().DONVIXEM);
 				quyens1.add(core().DONVILIST);
-				quyens1.add(core().DONVIXOA);		
-				
-				quyens1.add(core().DONVIHANHCHINHTHEM);
-				quyens1.add(core().DONVIHANHCHINHSUA);
-				quyens1.add(core().DONVIHANHCHINHXEM);
-				quyens1.add(core().DONVIHANHCHINHLIST);
-				quyens1.add(core().DONVIHANHCHINHXOA);
+				quyens1.add(core().DONVIXOA);
 				
 				quyens1.add(core().QUANTRIHETHONGLIST);
-			} else if (TONGBIENTAP.equals(alias1)) {
-				quyens1.add(core().BAIVIETTHEM);
-				quyens1.add(core().BAIVIETSUA);
-				quyens1.add(core().BAIVIETXEM);
-				quyens1.add(core().BAIVIETLIST);
-				quyens1.add(core().BAIVIETXOA);
-				quyens1.add(core().BAIVIETXUATBAN);
-			} else if (BIENTAPVIEN.equals(alias1)) {
-				quyens1.add(core().BAIVIETTHEM);
-				quyens1.add(core().BAIVIETSUA);
-				quyens1.add(core().BAIVIETXEM);
-				quyens1.add(core().BAIVIETLIST);
-				quyens1.add(core().BAIVIETXOA);
 			}
 			
 		}
