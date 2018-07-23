@@ -1,4 +1,4 @@
-# gjapp
+# zksampleapp
 First step:
 
 Open file /src/application.properties, check similar bellow code:
