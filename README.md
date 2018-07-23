@@ -16,3 +16,5 @@ Run on tomcat >= 7.
 Commnad build .war file:
 
 mvn clean package
+
+demo username/password:  admin/tcx@123 
